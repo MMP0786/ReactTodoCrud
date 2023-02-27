@@ -28,6 +28,91 @@
   color: #61dafb;
 }
 
+.header {
+  height: 70px;
+  border: 1px solid black;
+  background-color: #282c34;
+  color: wheat;
+  padding-top: 30px;
+}
+.footer {
+  height: 70px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: #282c34;
+  color: wheat;
+  padding-top: 30px;
+  position:fixed;
+  bottom: 0;
+  margin-top: 5px;
+}
+
+.plus{
+  position: absolute;
+  right: 15px;
+  font-size: 40px;
+  border: 1px solid ;
+  border-radius: 40px;
+  background-color: red;
+  height: 30px;
+  width: 40px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+#outlined-basic1{
+  height: 120px;
+  width: 40px;
+  margin-top: 10px;
+  /* background-color: red; */
+}
+
+.modal h2{
+  text-align: left;
+  padding-left: 55px;
+}
+.modal{
+  position: fixed;
+  top: 15%;
+  right: 30%;
+  width: 40%;
+  margin:20px auto ;
+  padding: 20px 0px;
+  box-shadow: 0px -1px 5px blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
+  z-index: 10;
+  background-color: #61dafb;
+}
+
+.containor-top{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.containor{
+  margin: 10px;
+  width: 18%;
+  background-color: red;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+
+.contaionor-upper{
+  position: relative;
+}
+
+.modal2{
+  position: absolute;
+  top: 0;
+  right: 20%;
+  z-index: 11;
+  width: 70%;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
