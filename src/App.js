@@ -57,7 +57,22 @@ import TodoC from './components/TodoC';
     console.log(this.state.todos)
   }
 
-
+  changeSearch = (text)=>{
+    const tempFiltered = this.state.todos.filter((ele)=>{
+      return(
+  
+        ele.name.toLowerCase().includes(text.toLowerCase())
+        ||
+        ele.description.toLowerCase().includes(text.toLowerCase())||
+        ele.status.toLowerCase().includes(text.toLowerCase())
+      )
+    });
+  
+    this.setState({filteredSearch: tempFiltered})
+    this.setState({searchText:text})
+    console.log("tempFiltered", tempFiltered)
+    console.log(text)
+  }
   
 
 
